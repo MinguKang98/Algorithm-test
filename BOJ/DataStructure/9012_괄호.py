@@ -1,4 +1,5 @@
 # 9012_괄호
+# Stack
 import sys
 
 
