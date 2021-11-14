@@ -9,4 +9,4 @@ def card(N:int) -> int:
     return q[0]
 
 N=int(input())
-print(card(N))
+print(card(N)) 
