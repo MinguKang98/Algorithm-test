@@ -50,12 +50,10 @@ def longestPalindrome2(s: str) -> str:
         result.append(s[i])
     for left in range(N - 1):  # substr의 길이 2 이상
         for right in range(left + 1, N):
-            print(f"s[{left}:{right+1}] : {s[left : right + 1]}")
             if s[left] == s[right]:
                 if dp[left + 1][right - 1] or right == left + 1:
                     dp[left][right] = 1
                     result.append(s[left : right + 1])
-                    print(s[left : right + 1])
 
     return max(result, key=len)
 
