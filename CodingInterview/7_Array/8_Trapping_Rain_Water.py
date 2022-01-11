@@ -50,6 +50,7 @@ def trap2(height: List[int]) -> int:
 """
 전체 시간복잡도 O(n)
 어려움
+더 빠름
 """
 
 height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
