@@ -44,3 +44,7 @@ class Solution:
 
         odd.next = even_head
         return head
+
+    """
+    공간복잡도 O(1), 시간복잡도 O(n)을 요구했으므로 연결리스트를 리스트로 변경하는 방법 불가
+    """
