@@ -41,7 +41,3 @@ class Solution:
             stack.append(idx)  # 항상 stack에 idx 추가
 
         return result
-
-    """
-    Time Limit Exceed
-    """
