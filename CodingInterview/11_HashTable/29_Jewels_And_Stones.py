@@ -4,7 +4,7 @@
 from typing import Counter
 from collections import defaultdict
 
-#
+
 class Solution:
     # Solution0 - mine, using Counter
     def numJewelsInStones0(self, jewels: str, stones: str) -> int:
