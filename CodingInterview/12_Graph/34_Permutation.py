@@ -26,7 +26,7 @@ class Solution:
         result = []
         prev_elements = []
 
-        def dfs(elements: int):
+        def dfs(elements: List[int]):
             if len(elements) == 0:
                 result.append(prev_elements[:])
 
