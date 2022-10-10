@@ -67,7 +67,10 @@ class Solution:
             else:
                 return mid_pivot
         return -1
-
+    """
+    left, mid, right는 정렬된 상태가 아니지만, mid_pivot 은 정렬된 상태에서 탐색중
+    
+    """
 
 nums = [3, 1]
 target = 3
