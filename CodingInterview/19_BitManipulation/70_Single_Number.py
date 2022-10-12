@@ -19,7 +19,7 @@ class Solution:
     """
 
     # Solution1 - using xor
-    def singleNumber0(self, nums: List[int]) -> int:
+    def singleNumber1(self, nums: List[int]) -> int:
         result = 0
         for num in nums:
             result ^= num
