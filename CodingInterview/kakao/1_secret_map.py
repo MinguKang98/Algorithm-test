@@ -1,5 +1,5 @@
 # 1_secret_map
-# https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1
+# https://school.programmers.co.kr/learn/courses/30/lessons/17681
 from typing import List
 
 

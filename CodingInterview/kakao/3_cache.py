@@ -1,5 +1,5 @@
 # 3_cache
-# https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1
+# https://school.programmers.co.kr/learn/courses/30/lessons/17680
 from typing import List
 from collections import deque
 
@@ -26,7 +26,7 @@ class Solution:
         return exec_time
 
     """
-    cache hit 시 순서바 바뀌는 것을 생각 못하여 해당부분 구현 X
+    cache hit 시 순서바 바뀌는 것을 생각 못하여 해당부분 구현 X => 오답
     """
 
     # Solution1
