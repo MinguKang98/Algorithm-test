@@ -1,6 +1,6 @@
 # 4_camouflage
 # https://school.programmers.co.kr/learn/courses/30/lessons/42578
-from collections import defaultdict
+from collections import defaultdict, Counter
 from itertools import combinations
 
 
@@ -51,6 +51,19 @@ def solution1(clothes):
 모두 곱한 후 1을 뺀 값은 같다.
 why?? 해당 종류의 옷을 입지 않는 경우를 생각하기 위해 1 을 더하고, 아무 것도 입지 않는 경우를 제외하기 위해 모두 곱한 
 값에서 1을 뺀다.
+"""
+
+def solution2(clothes):
+    count_list = Counter([kind for name, kind in clothes])
+
+    temp = 1
+    for num in count_list.values():
+        temp *= num + 1
+
+    return temp - 1
+
+"""
+kind 의 list 를 사용한 counter 를 사용한 풀이도 가능
 """
 
 clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
