@@ -37,8 +37,6 @@ def solution1():
     return cost_list[end]
 
 
-print(solution1())
-
 """
 dfs/bfs??
 다익스트라가 적합하다고 판단 -> 유형 판단은 맞았는데 구현 못함
@@ -53,3 +51,28 @@ dfs/bfs??
 python 의 경우 방문하지 않은 노드 중 가장 비용 적은 녿 선택하는 것을 heapq 사용하여 구현 가능
 => queue 에 들어간 노드 가장 짧은 노드가 아니면 우선순위가 뒤로 밀려나기 때문
 """
+
+
+def solution2():
+    bus_map = defaultdict(list)
+    for bus in buses:
+        bus_map[bus[0]].append([bus[1], bus[2]])
+
+    cost_list = [sys.maxsize for _ in range(N + 1)]
+    cost_list[start] = 0
+
+    for i in range(N - 1):  # 정점 개수(V-1) 만큼 반복
+        for node in bus_map:
+            for next_node, next_cost in bus_map[node]:
+                if cost_list[next_node] > cost_list[node] + next_cost:
+                    cost_list[next_node] = cost_list[node] + next_cost
+
+    return cost_list[end]
+
+
+"""
+밸만포드로 풀어보기
+
+"""
+
+print(solution2())
