@@ -1,4 +1,4 @@
-# 13913_숨바꼭질_Gold4
+# 13913_숨바꼭질4_Gold4
 # https://www.acmicpc.net/problem/13913
 from collections import deque
 
